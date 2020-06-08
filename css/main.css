@@ -61,17 +61,16 @@ letter-spacing:2px;
 color:white;
 line-height:70px;
 text-decoration:none;
-transition-duration:0.6s;
+transition-duration:0.3s;
 }
 
 #navitens a:hover
 {
-text-shadow:0px 0px 10px #fff;
+color:rgba(255, 210, 0);
 }
 
 #navsocialmedia
-{
-display:flex;
+{display:flex;
 flex-direction:row;
 }
 
@@ -79,8 +78,8 @@ flex-direction:row;
 {
 height:50px;
 width:50px;
-background-color:black;
-margin-right:15px;
+margin-right:18px;
+transition-duration:0.2s;
 }
 
 #contentbox
@@ -88,16 +87,38 @@ margin-right:15px;
 display:flex;
 flex-direction:column;
 flex-grow:14;
+} 
+
+.header
+{
+height:150px;
+background-image:url(../images/Header_01.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.header h1
+{
+font-family: 'Caveat Brush', cursive;
+letter-spacing:5px;
+font-size:100px;
+font-weight:600;
+color:white;
+margin-left:30px;
+margin-top:40px;
+text-shadow:0px 0px 30px #000;
 }
 
 
-/*  HOME SECTIONS START  */
+/* --------------- HOME SECTIONS START --------------- */
 
 #hero
 {
 height:100vh;
 background-image:url(../images/Hawaii_01.jpg);
 background-repeat: no-repeat;
+background-attachment: fixed;
 background-position: center;
 background-size: cover;
 }
@@ -105,7 +126,7 @@ background-size: cover;
 #herotitle
 {
 text-align:center;
-text-shadow:0px 0px 40px #000;
+text-shadow:0px 0px 80px #000;
 height:100px;
 width:100%;
 }
@@ -114,7 +135,7 @@ width:100%;
 {
 font-family: 'Caveat Brush', cursive;
 letter-spacing:5px;
-font-size:80px;
+font-size:90px;
 font-weight:600;
 color:white;
 margin-top:40vh;
@@ -122,51 +143,65 @@ margin-right:15px;
 margin-left:15px;
 }
 
+#herobottle
+{
+margin-top:-370px;
+margin-left:50vw;
+}
+
+#herocase
+{
+margin-top:-280px;
+margin-left:58vw;
+}
+
 #herobottombg
 {
 background-image:url(../images/Hero_Bottom_BG.png);
 background-repeat:no-repeat;
-background-position:center;
 background-size:cover;
-height:10vh;
+height:155px;
 width:100%;
-margin-top:-5vh;
+margin-top:-120px;
 }
 
-#herobottle
+#sectionID
 {
-margin-top:-380px;
-margin-left:60vw;
+min-height:100vh;
 }
 
 .sectioncontent
 {
-min-height:250px;
-border: 1px solid red;
-padding: 10px;
+padding-right:10px;
+padding:left:10px;
+padding-top:20px;
+padding-bottom:20px;
 }
 
 .sectioncontent p
 {
-color:black;
+font-size:22px;
+font-family: 'Fredoka One', cursive;
+color:rgba(70, 65, 55);
+line-height:25px;
+letter-spacing:1px;
+word-spacing:3px;
 }
 
 .sectioncontent h1
 {
-font-size:40px;
+font-size:55px;
 font-family: 'Caveat Brush', cursive;
+text-align:center;
 color:rgba(255, 80, 0);
+margin-bottom:35px;
+margin-top:10px;
 }
 
 .yellowband
 {
 background-color:rgba(255, 190, 0);
-height:40px;
-}
-
-#contentstart
-{
-
+height:60px;
 }
 
 #ad_gallery
@@ -175,43 +210,493 @@ display:flex;
 flex-direction:column;
 min-height:300px;
 background-color:white;
-padding:30px;
 }
+
+#ad_title
+{
+margin-top:-300px;
+}
+
+/* --------------- SLIDE SHOW START --------------- */
+.slideshow-container
+{
+min-height:600px;
+display:flex;
+flex-direction:column;
+background-color:rgba(255,140,60);
+background-image:url(../images/Gallery_BG.png);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.slideshow-container h1
+{
+font-size:55px;
+font-family: 'Caveat Brush', cursive;
+text-align:center;
+color:rgba(255, 255, 255);
+}
+
+.mySlides
+{
+margin-right:auto;
+margin-left:auto;
+}
+
+#gallery_slide_01
+{
+width:55vw;
+height:600px;
+background-image:url(../images/Gallery_Placeholder_01.png);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+#gallery_slide_02
+{
+width:55vw;
+height:600px;
+background-image:url(../images/Gallery_Placeholder_02.png);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+#gallery_slide_03
+{
+width:55vw;
+height:600px;
+background-image:url(../images/Gallery_Placeholder_03.png);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+#gallery_slide_04
+{
+width:55vw;
+height:600px;
+background-image:url(../images/Gallery_Placeholder_04.png);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.cursor_container
+{
+display: flex;
+flex-direction:row;
+justify-content:space-between;
+cursor: pointer;
+width: 55vw;
+margin-top:-310px;
+margin-right:auto;
+margin-left:auto;
+}
+
+.prev, .next
+{
+width: 10px;
+height:15px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.4s ease;
+user-select: none;
+padding: 16px;
+}
+
+.prev:hover, .next:hover
+{
+background-color: rgba(0,0,0,0.8);
+}
+/* --------------- SLIDE SHOW END --------------- */
+
+/* --------------- HOME SECTIONS START --------------- */
 
 #ad_order
 {
 display:flex;
 flex-direction:column;
 min-height:300px;
-background-color:#929292;
+background-color:white;
 padding:30px;
 }
 
-#ad_findus
+#ad_order p
+{
+text-align:center;
+}
+
+#ad_order article
+{
+width:70%;
+margin: 0 auto;
+}
+
+#ad_order_imgs
+{
+display:flex;
+justify-content:center;
+margin-top:60px;
+}
+
+#ad_order_imgs img
+{
+margin-left:20px;
+margin-right:20px;
+}
+
+
+#ad_values
 {
 display:flex;
 flex-direction:column;
-min-height:300px;
-background-color:#444444;
 padding:30px;
 }
 
-#ad_map
+#ad_values article
+{
+width:70%;
+margin: 0 auto;
+}
+
+.ad_values_flexdisplay
+{
+display:flex;
+justify-content:space-between;
+margin-bottom:30px;
+}
+
+.ad_values_flexdisplay h2
+{
+font-size:34px;
+font-family: 'Caveat Brush', cursive;
+text-align:center;
+color:rgba(255, 100, 40);
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.ad_values_flexbox
+{
+width:200px;
+}
+
+.ad_values_flexbox_names
+{
+width:200px;
+}
+
+.ad_values_flexbox_names p
+{
+margin-top:6px;
+font-size:30px;
+font-family: 'Caveat Brush', cursive;
+text-align:center;
+color:rgba(170, 70, 40, 0.7);
+}
+
+
+
+#ad_intro
+{
+display:flex;
+background-color:rgba(255,130,0);
+padding:30px;
+}
+
+#ad_intro a
+{
+text-decoration:none;
+}
+
+#ad_intro h1
+{
+color:white;
+}
+
+#ad_intro p
+{
+color:white;
+text-align: center;
+text-align:justify;
+}
+
+#ad_intro_article
+{
+width:70%;
+margin: 0 auto;
+}
+
+#ad_intro_button
+{
+border: 2px solid white;
+border-radius: 5px;
+width:120px;
+margin-left: auto;
+padding:5px;
+}
+
+#ad_intro_button p
+{
+margin: 0px;
+text-align:center;
+}
+
+#ad_intro_button:hover
+{
+background-color:white;
+}
+
+#ad_intro_button p:hover
+{
+margin: 0px;
+color:rgba(255,130,0);
+}
+
+
+/* --------------- HOME SECTIONS END --------------- */
+
+/* --------------- BEER SECTIONS START --------------- */
+
+.beers_flex_display
+{
+margin-left:auto;
+margin-right:auto;
+margin-top:0px;
+margin-bottom:90px;
+width: 70%;
+}
+
+.beers_flex_display h2
+{
+font-size:40px;
+font-family: 'Caveat Brush', cursive;
+text-align:left;
+color:rgba(255, 80, 0);
+margin-bottom:20px;
+}
+
+.beers_flex_display hr
+{
+margin-bottom:50px;
+}
+
+.beer_article
+{
+display:flex;
+margin-bottom:50px;
+}
+
+.beer_text
+{
+
+}
+
+.beer_image
+{
+min-height:400px;
+min-width:500px;
+background-color:grey;
+}
+
+/* --------------- BEER SECTIONS END --------------- */
+
+/* --------------- ABOUT SECTIONS START --------------- */
+
+#about_section
+{
+width:70%;
+min-height:700px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#about_section article
+{
+margin-bottom:90px;
+}
+
+/* --------------- ABOUT SECTIONS END --------------- */
+
+/* --------------- CONTACT START --------------- */
+
+#contact_flex_display
+{
+width:70%;
+margin-left:auto;
+margin-right:auto;
+}
+
+#form_flex_display
 {
 display:flex;
 flex-direction:column;
-min-height:300px;
-background-color:#929292;
-padding:30px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:50px;
+margin-top:30px;
+padding:15px;
+width:70%;
+background-color:rgba(255, 80, 0);
+border-radius:15px;
 }
 
-/*  HOME SECTIONS END  */
+#form_flex_display input, select, option
+{
+margin-bottom:10px;
+border:none;
+border-radius:5px;
+padding:8px;
+}
+
+#form_flex_display textarea
+{
+height:100px;
+margin-bottom:30px;
+border:none;
+border-radius:5px;
+padding:5px;
+resize:vertical;
+}
+
+#form_flex_display label
+{
+font-size:30px;
+font-family: 'Caveat Brush', cursive;
+text-align:left;
+color:white;
+margin-bottom:5px;
+margin-top:5px;
+}
+
+#button_area
+{
+display:flex;
+justify-content:center;
+}
+
+#form_submit_buttom
+{
+width:120px;
+height:45px;
+font-size:25px;
+font-family: 'Caveat Brush', cursive;
+letter-spacing:2px;
+font-weight:bold;
+color:white;
+background-color:rgba(255, 80, 0);
+border-radius:8px;
+border: 3px solid white;
+}
+
+#form_submit_buttom:hover
+{
+color:rgba(255, 80, 0);
+background-color:white;
+}
+
+/* --------------- CONTACT END --------------- */
+
+/* --------------- ORDER START --------------- */
+
+#order_flex_display
+{
+width:70%;
+margin-left:auto;
+margin-right:auto;
+}
+
+#order_form_flex_display
+{
+display:flex;
+flex-direction:column;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:50px;
+margin-top:30px;
+padding:15px;
+width:70%;
+background-color:rgba(255, 170, 0);
+border-radius:15px;
+}
+
+#order_form_flex_display input, select, option
+{
+margin-bottom:10px;
+border:none;
+border-radius:5px;
+padding:8px;
+}
+
+#order_form_flex_display textarea
+{
+height:100px;
+margin-bottom:30px;
+border:none;
+border-radius:5px;
+padding:5px;
+resize:vertical;
+}
+
+#order_form_flex_display label
+{
+font-size:30px;
+font-family: 'Caveat Brush', cursive;
+text-align:left;
+color:white;
+margin-bottom:5px;
+margin-top:5px;
+}
+
+#order_button_area
+{
+display:flex;
+justify-content:center;
+}
+
+#order_form_submit_buttom
+{
+width:120px;
+height:45px;
+font-size:25px;
+font-family: 'Caveat Brush', cursive;
+letter-spacing:2px;
+font-weight:bold;
+color:white;
+background-color:rgba(255, 170, 0);
+border-radius:8px;
+border: 3px solid white;
+}
+
+#order_form_submit_buttom:hover
+{
+color:rgba(255, 170, 0);
+background-color:white;
+}
+
+/* --------------- ORDER END --------------- */
+
+/* --------------- FOOTER START --------------- */
 
 #footer
 {
 display:flex;
-min-height:100px;
+min-height:40px;
 background-color:rgba(255,130,0);
 padding:30px;
 justify-content: center;
 }
+
+#footer p
+{
+font-family:sans-serif;
+font-size:18px;
+width:70%;
+text-align:center;
+}
+
+/* --------------- FOOTER END --------------- */
