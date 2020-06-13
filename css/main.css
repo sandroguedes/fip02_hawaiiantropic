@@ -215,6 +215,7 @@ background-color:white;
 #ad_title
 {
 margin-top:-300px;
+text-shadow:0px 0px 30px #000;
 }
 
 /* --------------- SLIDE SHOW START --------------- */
@@ -246,9 +247,9 @@ margin-left:auto;
 
 #gallery_slide_01
 {
-width:55vw;
+width:60vw;
 height:600px;
-background-image:url(../images/Gallery_Placeholder_01.png);
+background-image:url(../images/Gallery_01_All.png);
 background-repeat:no-repeat;
 background-position:center;
 background-size:cover;
@@ -256,9 +257,9 @@ background-size:cover;
 
 #gallery_slide_02
 {
-width:55vw;
+width:60vw;
 height:600px;
-background-image:url(../images/Gallery_Placeholder_02.png);
+background-image:url(../images/Gallery_02_HawaiianWhite.png);
 background-repeat:no-repeat;
 background-position:center;
 background-size:cover;
@@ -266,9 +267,9 @@ background-size:cover;
 
 #gallery_slide_03
 {
-width:55vw;
+width:60vw;
 height:600px;
-background-image:url(../images/Gallery_Placeholder_03.png);
+background-image:url(../images/Gallery_03_LemonShandy.png);
 background-repeat:no-repeat;
 background-position:center;
 background-size:cover;
@@ -276,9 +277,19 @@ background-size:cover;
 
 #gallery_slide_04
 {
-width:55vw;
+width:60vw;
 height:600px;
-background-image:url(../images/Gallery_Placeholder_04.png);
+background-image:url(../images/Gallery_04_RubyFresh.png);
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+#gallery_slide_05
+{
+width:60vw;
+height:600px;
+background-image:url(../images/Gallery_05_HolyCitrus.png);
 background-repeat:no-repeat;
 background-position:center;
 background-size:cover;
@@ -290,7 +301,7 @@ display: flex;
 flex-direction:row;
 justify-content:space-between;
 cursor: pointer;
-width: 55vw;
+width: 60vw;
 margin-top:-310px;
 margin-right:auto;
 margin-left:auto;
@@ -372,7 +383,7 @@ margin-bottom:30px;
 
 .ad_values_flexdisplay h2
 {
-font-size:34px;
+font-size:28px;
 font-family: 'Caveat Brush', cursive;
 text-align:center;
 color:rgba(255, 100, 40);
@@ -382,24 +393,23 @@ letter-spacing:2px;
 
 .ad_values_flexbox
 {
-width:200px;
+min-width:200px;
 }
 
 .ad_values_flexbox_names
 {
-width:200px;
+min-width:200px;
+border: 1px solid red;
 }
 
 .ad_values_flexbox_names p
 {
 margin-top:6px;
-font-size:30px;
+font-size:25px;
 font-family: 'Caveat Brush', cursive;
 text-align:center;
 color:rgba(170, 70, 40, 0.7);
 }
-
-
 
 #ad_intro
 {

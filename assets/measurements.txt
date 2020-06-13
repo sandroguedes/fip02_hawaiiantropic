@@ -19,5 +19,3 @@ Sections
 Footer
 - Width: 100% of Main Content
 - Height: Minimum 100px, max undefined
-
-
