@@ -1,7 +1,7 @@
-# Midterm FIP Checkpoint
+# FINAL INTEGRATED PROJECT
 
 ## Description
-Readme file for Midterm Checkpoint for IDP Level 2 course at Fanshawe College.
+Readme file for Final Integrated Project for IDP Level 2 course at Fanshawe College.
 
 ## Installation
 There is no installation process for this repo. Simply pull down and start working!
