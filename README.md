@@ -1,7 +1,7 @@
 # FINAL INTEGRATED PROJECT
 
 ## Description
-Readme file for Final Integrated Project for IDP Level 2 course at Fanshawe College.
+My Awesome Final Integrated Project for the second term of the Interactive Media Design course at Fanshawe College.
 
 ## Installation
 There is no installation process for this repo. Simply pull down and start working!
