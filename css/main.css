@@ -1,3 +1,11 @@
+/* ---[[[ GENERAL ELEMENTS START ]]]--- */
+
+@font-face
+{
+font-family: DirtyHeadline;
+src: url(../assets/dirty_headline-webfont.woff);
+}
+
 p
 {
 font-family:sans-serif;
@@ -11,6 +19,14 @@ margin-bottom:15px;
 display:none;
 }
 
+/* ---[[[ GENERAL ELEMENTS END ]]]--- */
+
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/* --------------- MASTER START --------------- */
+
 #master_container
 {
 display:flex;
@@ -20,46 +36,118 @@ flex-direction:column;
 .bodycontainer
 {
 display:flex;
-flex-direction:row;
+flex-direction:column;
 }
 
 #sidenav
 {
-padding:20px;
+display:none
+}
+
+.hiddenmobnav
+{
+display:none;
+}
+
+.hiddenmobnavtoggled
+{
+display:block;
+}
+
+.topspacer
+{
+width:100%;
+margin-top:15px;
+display:flex;
+flex-direction:row;
+justify-content:flex-end;
+}
+
+.hamburgersidenav
+{
+display:flex;
+flex-direction:column;
+background-color:rgba(255, 100, 0);
 position:fixed;
+width:100%;
+}
+
+.hamburgersidenavtoggled
+{
+display:flex;
+flex-direction:column;
+background-color:rgba(255, 100, 0);
+position:fixed;
+width:100%;
 height:100vh;
 }
 
-#sidenavbg
+.hamburgerbtn
 {
-flex-grow:1;
-background-color:rgba(255, 80, 0);
-min-width:250px;
+padding:8px;
+cursor:pointer;
+height:49px;
+width:49px;
+background:none;
+border:none;
+margin-right:20px;
+transition:.3s;
+margin-bottom:5px;
+}
+
+.hamburgerbtn:active
+{
+padding:2px;
+}
+
+.hamburgerbtnasctive
+{
+padding:5px;
+cursor:pointer;
+height:49px;
+width:49px;
+background:none;
+border:none;
+margin-right:20px;
+transition:.3s;
+transform:rotate(90deg);
+}
+
+#logocontainer
+{
+display:flex;
+flex-direction:row;
+justify-content:center;
+margin-top:4vh;
 }
 
 #logo
 {
-width:210px;
-height:210px;
-margin-top:20px;
-margin-bottom:50px;
+width:235px;
 }
 
 #navitens
 {
-font-family:sans-serif;
-font-size:30px;
 color:white;
-margin-bottom:40px;
+display:flex;
+flex-direction:row;
+justify-content:center;
+margin-top:10vh;
+margin-bottom:8vh;
+}
+
+#navitens ul li
+{
+display:block
 }
 
 #navitens a
 {
-font-family: 'Caveat Brush', cursive;
-font-size:50px;
+font-family: DirtyHeadline, cursive;
+font-size:40px;
 letter-spacing:2px;
 color:white;
-line-height:70px;
+line-height:80px;
 text-decoration:none;
 transition-duration:0.3s;
 }
@@ -69,25 +157,130 @@ transition-duration:0.3s;
 color:rgba(255, 210, 0);
 }
 
-#navsocialmedia
-{display:flex;
+#navsocialmediacontainer
+{
+display:flex;
 flex-direction:row;
+justify-content:center;
+}
+
+#navsocialmedia
+{
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+width:200px;
 }
 
 #navsocialmedia div
 {
 height:50px;
 width:50px;
-margin-right:18px;
 transition-duration:0.2s;
 }
 
-#contentbox
+#sidenavbg
+{
+display:none;
+}
+
+@media only screen and (min-width: 600px)
+{
+	
+	#logo
+	{
+	width:200px;
+	height:200px;
+	margin-top:60px;
+	margin-bottom:-50px;
+	}
+
+	#navitens
+	{
+	display:flex;
+	flex-direction:column;
+	font-size:15px;
+	color:white;
+	}
+
+	#navitens ul li
+	{
+	display:block
+	}
+
+	#navitens a
+	{
+	font-family: DirtyHeadline, cursive;
+	font-size:40px;
+	letter-spacing:2px;
+	color:white;
+	line-height:70px;
+	text-decoration:none;
+	transition-duration:0.3s;
+	}
+
+	#navitens a:hover
+	{
+	color:rgba(255, 210, 0);
+	}
+
+	#navsocialmedia
+	{display:flex;
+	flex-direction:row;
+	}
+
+	#navsocialmedia div
+	{
+	height:50px;
+	width:50px;
+	margin-right:18px;
+	transition-duration:0.2s;
+	}
+
+	.bodycontainer
+	{
+	display:flex;
+	flex-direction:row;
+	}
+
+	#sidenav
+	{
+	display:flex;
+	flex-direction:column;
+	padding:20px;
+	position:fixed;
+	height:100vh;
+	}
+
+	.hamburgersidenav
+	{
+	display:none;
+	}
+
+	.hamburgersidenavtoggled
+	{
+	display:none;
+	}
+
+	#sidenavbg
+	{
+	display:flex;
+	background-color:rgba(255, 100, 0);
+	min-width:250px;
+	}
+}
+
+.contentbox
 {
 display:flex;
 flex-direction:column;
 flex-grow:14;
-} 
+}
+
+.contentboxtoggled
+{
+display:none;
+}
 
 .header
 {
@@ -110,8 +303,13 @@ margin-top:40px;
 text-shadow:0px 0px 30px #000;
 }
 
+/* --------------- MASTER END --------------- */
 
-/* --------------- HOME SECTIONS START --------------- */
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/* --------------- HOME START --------------- */
 
 #hero
 {
@@ -218,7 +416,8 @@ margin-top:-300px;
 text-shadow:0px 0px 30px #000;
 }
 
-/* --------------- SLIDE SHOW START --------------- */
+/* ((( SLIDE SHOW START ))) */
+
 .slideshow-container
 {
 min-height:600px;
@@ -323,7 +522,12 @@ padding: 16px;
 {
 background-color: rgba(0,0,0,0.8);
 }
-/* --------------- SLIDE SHOW END --------------- */
+
+/* ((( SLIDE SHOW END ))) */
+
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
 
 /* --------------- HOME SECTIONS START --------------- */
 
@@ -393,13 +597,12 @@ letter-spacing:2px;
 
 .ad_values_flexbox
 {
-min-width:200px;
+width:150px;
 }
 
 .ad_values_flexbox_names
 {
 min-width:200px;
-border: 1px solid red;
 }
 
 .ad_values_flexbox_names p
@@ -469,8 +672,13 @@ color:rgba(255,130,0);
 
 
 /* --------------- HOME SECTIONS END --------------- */
+/* --------------- HOME END --------------- */
 
-/* --------------- BEER SECTIONS START --------------- */
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/* --------------- BEER START --------------- */
 
 .beers_flex_display
 {
@@ -513,9 +721,13 @@ min-width:500px;
 background-color:grey;
 }
 
-/* --------------- BEER SECTIONS END --------------- */
+/* --------------- BEER END --------------- */
 
-/* --------------- ABOUT SECTIONS START --------------- */
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/* --------------- ABOUT START --------------- */
 
 #about_section
 {
@@ -530,7 +742,11 @@ margin-right:auto;
 margin-bottom:90px;
 }
 
-/* --------------- ABOUT SECTIONS END --------------- */
+/* --------------- ABOUT END --------------- */
+
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
 
 /* --------------- CONTACT START --------------- */
 
@@ -611,6 +827,10 @@ background-color:white;
 
 /* --------------- CONTACT END --------------- */
 
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
 /* --------------- ORDER START --------------- */
 
 #order_flex_display
@@ -690,6 +910,10 @@ background-color:white;
 
 /* --------------- ORDER END --------------- */
 
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
 /* --------------- FOOTER START --------------- */
 
 #footer
@@ -710,3 +934,5 @@ text-align:center;
 }
 
 /* --------------- FOOTER END --------------- */
+
+/* ---------{{{{{{{{{ DESKTOP END }}}}}}}}}--------- */
