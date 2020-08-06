@@ -1,4 +1,4 @@
-# FINAL INTEGRATED PROJECT
+# IDP LV 2 FINAL INTEGRATED PROJECT
 
 ## Description
 My Awesome Final Integrated Project for the second term of the Interactive Media Design course at Fanshawe College.
