@@ -184,7 +184,7 @@ transition-duration:0.2s;
 display:none;
 }
 
-@media only screen and (min-width: 600px)
+@media only screen and (min-width: 800px)
 {
 	
 	#logo
@@ -314,19 +314,36 @@ text-shadow:0px 0px 10px #000;
 #hero
 {
 height:100vh;
-background-image:url(../images/Hawaii_01.jpg);
+/*background-image:url(../images/Hawaii_01.jpg);
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
-background-size: cover;
+background-size: cover;*/
+overflow:hidden;
+}
+
+#herovideo
+{
+object-fit: cover;
+width: 100vw;
+height: 100vh;
+position: fixed;
+top: 0;
+left: 0;
+z-index:-1;
 }
 
 #herotitle
 {
+display:flex;
+flex-direction:column;
+justify-content:center;
 text-align:center;
+padding:20px;
 text-shadow:0px 0px 20px rgba(0, 0, 0, 1);
-height:100px;
+height:100%;
 width:100%;
+z-index:2;
 }
 
 #herotitle h1
@@ -336,31 +353,26 @@ letter-spacing:5px;
 font-size:60px;
 font-weight:600;
 color:white;
-margin-top:45vh;
-margin-right:15px;
-margin-left:15px;
 }
 
-@media only screen and (min-width: 600px)
+@media only screen and (min-width: 800px)
 {
 	#herotitle
 	{
 	text-align:center;
 	text-shadow:0px 0px 60px rgba(0, 0, 0, 1);
-	height:100px;
+	height:100%;
 	width:100%;
+	z-index:2;
 	}
 
 	#herotitle h1
 	{
 	font-family: 'Caveat Brush', cursive;
 	letter-spacing:5px;
-	font-size:80px;
+	font-size:75px;
 	font-weight:600;
 	color:white;
-	margin-top:45vh;
-	margin-right:15px;
-	margin-left:15px;
 	}
 }
 
@@ -419,7 +431,7 @@ margin-bottom:35px;
 margin-top:10px;
 }
 
-@media only screen and (min-width: 600px)
+@media only screen and (min-width: 800px)
 {
 	
 	.sectioncontent
@@ -497,7 +509,7 @@ max-width:300px;
 color:rgba(255, 255, 255);
 }
 
-@media only screen and (min-width: 600px)
+@media only screen and (min-width: 800px)
 {
 	.slideshow-container h1
 	{
@@ -641,7 +653,7 @@ margin:20px auto 20px auto;
 margin: 0 auto;
 }
 
-@media only screen and (min-width: 600px)
+@media only screen and (min-width: 800px)
 {
 	#ad_order_imgs
 	{
@@ -663,6 +675,7 @@ margin: 0 auto;
 display:flex;
 flex-direction:column;
 padding:30px;
+background-color:white;
 }
 
 #ad_values article
@@ -689,7 +702,7 @@ font-weight:bold;
 letter-spacing:2px;
 }
 
-@media only screen and (min-width: 600px)
+@media only screen and (min-width: 800px)
 {
 	.ad_values_flexdisplay
 	{
@@ -1053,7 +1066,6 @@ height:20px;
 background-color:rgba(255,130,0);
 padding:20px;
 justify-content: center;
-margin-top:50px;
 }
 
 #footer p
