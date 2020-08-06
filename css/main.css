@@ -336,7 +336,7 @@ letter-spacing:5px;
 font-size:60px;
 font-weight:600;
 color:white;
-margin-top:40vh;
+margin-top:45vh;
 margin-right:15px;
 margin-left:15px;
 }
@@ -355,10 +355,10 @@ margin-left:15px;
 	{
 	font-family: 'Caveat Brush', cursive;
 	letter-spacing:5px;
-	font-size:90px;
+	font-size:80px;
 	font-weight:600;
 	color:white;
-	margin-top:40vh;
+	margin-top:45vh;
 	margin-right:15px;
 	margin-left:15px;
 	}
@@ -393,18 +393,18 @@ min-height:100vh;
 
 .sectioncontent
 {
-padding-right:10px;
-padding:left:10px;
+padding-right:3px;
+padding:left:3px;
 padding-top:20px;
 padding-bottom:20px;
 }
 
 .sectioncontent p
 {
-font-size:22px;
+font-size:18px;
 font-family: 'Fredoka One', cursive;
 color:rgba(70, 65, 55);
-line-height:25px;
+line-height:24px;
 letter-spacing:1px;
 word-spacing:3px;
 }
@@ -421,6 +421,25 @@ margin-top:10px;
 
 @media only screen and (min-width: 600px)
 {
+	
+	.sectioncontent
+	{
+	padding-right:10px;
+	padding:left:10px;
+	padding-top:20px;
+	padding-bottom:20px;
+	}
+
+	.sectioncontent p
+	{
+	font-size:22px;
+	font-family: 'Fredoka One', cursive;
+	color:rgba(70, 65, 55);
+	line-height:25px;
+	letter-spacing:1px;
+	word-spacing:3px;
+	}
+
 	.sectioncontent h1
 	{
 	font-size:55px;
@@ -630,6 +649,7 @@ margin: 0 auto;
 	flex-direction:row;
 	justify-content:center;
 	margin-top:60px;
+	max-width:500px;
 	}
 
 	#ad_order_imgs img
@@ -692,7 +712,16 @@ letter-spacing:2px;
 
 .ad_values_flexbox
 {
+display:flex;
+flex-direction:column;
 width:150px;
+}
+
+.ad_values_flexalign
+{
+display:flex;
+flex-direction:row;
+justify-content:center;
 }
 
 .ad_values_svg
@@ -1020,10 +1049,11 @@ background-color:white;
 #footer
 {
 display:flex;
-min-height:40px;
+height:20px;
 background-color:rgba(255,130,0);
-padding:30px;
+padding:20px;
 justify-content: center;
+margin-top:50px;
 }
 
 #footer p
