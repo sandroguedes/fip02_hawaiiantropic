@@ -1,6 +1,6 @@
 // SLIDE SHOW START
 
-console.log('fired!');
+console.log('slide show FIRED!');
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -26,3 +26,23 @@ function showSlides(n) {
 
 // SLIDE SHOW END
 
+// HAMBURGER START
+
+console.log("hamburger FIRED");
+
+let button = document.querySelector(".hamburgerbtn")
+	burgerNav = document.querySelector(".hamburgersidenav")
+	burgerCon = document.querySelector(".hiddenmobnav")
+	mainContent = document.querySelector(".contentbox");
+
+function hamburgerMenu()
+	{
+	burgerCon.classList.toggle("hiddenmobnavtoggled")
+	mainContent.classList.toggle("contentboxtoggled")
+	burgerNav.classList.toggle("hamburgersidenavtoggled")
+	button.classList.toggle("hamburgerbtnasctive");
+	}
+
+button.addEventListener("click", hamburgerMenu);
+
+// HAMBURGER END
