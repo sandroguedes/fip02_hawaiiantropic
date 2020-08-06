@@ -67,7 +67,7 @@ justify-content:flex-end;
 {
 display:flex;
 flex-direction:column;
-background-color:rgba(255, 100, 0);
+background-color:rgba(255, 100, 0, 0.85);
 position:fixed;
 width:100%;
 }
@@ -296,11 +296,11 @@ background-size: cover;
 font-family: 'Caveat Brush', cursive;
 letter-spacing:5px;
 font-size:100px;
-font-weight:600;
+font-weight:400;
 color:white;
 margin-left:30px;
 margin-top:40px;
-text-shadow:0px 0px 30px #000;
+text-shadow:0px 0px 10px #000;
 }
 
 /* --------------- MASTER END --------------- */
@@ -324,7 +324,7 @@ background-size: cover;
 #herotitle
 {
 text-align:center;
-text-shadow:0px 0px 80px #000;
+text-shadow:0px 0px 20px rgba(0, 0, 0, 1);
 height:100px;
 width:100%;
 }
@@ -333,12 +333,35 @@ width:100%;
 {
 font-family: 'Caveat Brush', cursive;
 letter-spacing:5px;
-font-size:90px;
+font-size:60px;
 font-weight:600;
 color:white;
 margin-top:40vh;
 margin-right:15px;
 margin-left:15px;
+}
+
+@media only screen and (min-width: 600px)
+{
+	#herotitle
+	{
+	text-align:center;
+	text-shadow:0px 0px 60px rgba(0, 0, 0, 1);
+	height:100px;
+	width:100%;
+	}
+
+	#herotitle h1
+	{
+	font-family: 'Caveat Brush', cursive;
+	letter-spacing:5px;
+	font-size:90px;
+	font-weight:600;
+	color:white;
+	margin-top:40vh;
+	margin-right:15px;
+	margin-left:15px;
+	}
 }
 
 #herobottle
@@ -388,12 +411,25 @@ word-spacing:3px;
 
 .sectioncontent h1
 {
-font-size:55px;
+font-size:40px;
 font-family: 'Caveat Brush', cursive;
 text-align:center;
 color:rgba(255, 80, 0);
 margin-bottom:35px;
 margin-top:10px;
+}
+
+@media only screen and (min-width: 600px)
+{
+	.sectioncontent h1
+	{
+	font-size:55px;
+	font-family: 'Caveat Brush', cursive;
+	text-align:center;
+	color:rgba(255, 80, 0);
+	margin-bottom:35px;
+	margin-top:10px;
+	}
 }
 
 .yellowband
@@ -412,6 +448,9 @@ background-color:white;
 
 #ad_title
 {
+display:flex;
+flex-direction:row;
+justify-content:center;
 margin-top:-300px;
 text-shadow:0px 0px 30px #000;
 }
@@ -432,10 +471,23 @@ background-size:cover;
 
 .slideshow-container h1
 {
-font-size:55px;
+font-size:40px;
 font-family: 'Caveat Brush', cursive;
 text-align:center;
+max-width:300px;
 color:rgba(255, 255, 255);
+}
+
+@media only screen and (min-width: 600px)
+{
+	.slideshow-container h1
+	{
+	font-size:55px;
+	font-family: 'Caveat Brush', cursive;
+	text-align:center;
+	max-width:650px;
+	color:rgba(255, 255, 255);
+	}
 }
 
 .mySlides
@@ -554,16 +606,37 @@ margin: 0 auto;
 #ad_order_imgs
 {
 display:flex;
+flex-direction:column;
 justify-content:center;
 margin-top:60px;
+margin: 60px auto 0 auto;
 }
 
 #ad_order_imgs img
 {
-margin-left:20px;
-margin-right:20px;
+margin:20px auto 20px auto;
 }
 
+#ad_order_imgs a
+{
+margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px)
+{
+	#ad_order_imgs
+	{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	margin-top:60px;
+	}
+
+	#ad_order_imgs img
+	{
+	margin: 0 20px 0 20px;
+	}
+}
 
 #ad_values
 {
@@ -581,8 +654,9 @@ margin: 0 auto;
 .ad_values_flexdisplay
 {
 display:flex;
+flex-direction:column;
 justify-content:space-between;
-margin-bottom:30px;
+margin:0 auto 30px auto;
 }
 
 .ad_values_flexdisplay h2
@@ -595,17 +669,44 @@ font-weight:bold;
 letter-spacing:2px;
 }
 
+@media only screen and (min-width: 600px)
+{
+	.ad_values_flexdisplay
+	{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin:0 auto 30px auto;
+	}
+
+	.ad_values_flexdisplay h2
+	{
+	font-size:28px;
+	font-family: 'Caveat Brush', cursive;
+	text-align:center;
+	color:rgba(255, 100, 40);
+	font-weight:bold;
+	letter-spacing:2px;
+	}
+}
+
 .ad_values_flexbox
 {
 width:150px;
 }
 
-.ad_values_flexbox_names
+.ad_values_svg
+{
+width:150px;
+margin: 0 auto;
+}
+
+.ad_values_flexbox
 {
 min-width:200px;
 }
 
-.ad_values_flexbox_names p
+.ad_values_flexbox p
 {
 margin-top:6px;
 font-size:25px;
