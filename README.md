@@ -10,12 +10,7 @@ If you would like to know more, download/clone from master and start from index.
 Like what you see? Well, grab a drink and join us!
 
 
-## Installation
-There is no installation process for this repo. Simply pull down and start working!
-
-
 ## Author
-
 ### Sandro Guedes
 * Design
 * Development
@@ -40,7 +35,6 @@ There is no installation process for this repo. Simply pull down and start worki
 
 
 ## License
-
 ### MIT License
 
 Copyright (c) [2020] [Sandro Guedes]
