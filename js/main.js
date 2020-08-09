@@ -28,10 +28,6 @@ button.addEventListener("click", hamburgerMenu);
 
 console.log("scroll FIRED!")
 
-function hideBurgerMenu() {
-
-}
-
 let prevScroll = window.pageYOffset;
 
 window.onscroll = function() {
@@ -39,13 +35,13 @@ window.onscroll = function() {
 	
 	if (prevScroll > currentScroll)
   		{
-    	burgerNav.style.top = "0";
-    	burgerNav.style.transition = "0.3s";
+    		burgerNav.style.top = "0";
+    		burgerNav.style.transition = "0.4s";
   		}
   		else
   			{
-  			burgerNav.style.top = "-70px";
-  			burgerNav.style.transition = "0.3s";
+  				burgerNav.style.top = "-90px";
+  				burgerNav.style.transition = "0.4s";
   			}
   		prevScroll = currentScroll;
 }

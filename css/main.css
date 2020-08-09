@@ -1,5 +1,7 @@
 /* ---[[[ GENERAL ELEMENTS START ]]]--- */
 
+
+/* ---[[[ SCROLL END ]]]--- */
 html
 {
 --scrollbarBG: linear-gradient(0deg, rgba(255,149,0,1) 0%, rgba(255,188,0,1) 51%, rgba(254,255,0,1) 100%);
@@ -9,7 +11,7 @@ overflow-x:hidden;
 
 body::-webkit-scrollbar
 {
-width: 20px;
+width: 10px;
 margin:5px;
 }
 
@@ -28,6 +30,18 @@ body::-webkit-scrollbar-thumb
 {
 background-color: var(--thumbBG) ;
 }
+
+
+@media only screen and (min-width: 800px)
+{
+	body::-webkit-scrollbar
+	{
+	width: 20px;
+	margin:5px;
+	}
+}
+/* ---[[[ SCROLL END ]]]--- */
+
 
 @font-face
 {
@@ -89,7 +103,7 @@ width:100%;
 margin-top:15px;
 display:flex;
 flex-direction:row;
-justify-content:flex-end;
+justify-content:space-between;
 }
 
 .hamburgersidenav
@@ -153,6 +167,14 @@ margin-top:4vh;
 #logo
 {
 width:235px;
+}
+
+#logomobtopnav
+{
+width:100px;
+margin-left:10px;
+margin-bottom:5px;
+margin-top:-5px;
 }
 
 #navitens
@@ -313,7 +335,7 @@ display:none;
 
 .header
 {
-height:150px;
+height:220px;
 background-image:url(../images/Header_01.png);
 background-repeat: no-repeat;
 background-position: center;
@@ -328,8 +350,22 @@ font-size:100px;
 font-weight:400;
 color:white;
 margin-left:30px;
-margin-top:40px;
-text-shadow:0px 0px 10px #000;
+margin-top:110px;
+text-shadow:0px 0px 60px rgba(0, 0, 0, 1);
+}
+
+@media only screen and (min-width: 800px)
+{
+	.header
+	{
+	height:150px;
+	}
+
+	.header h1
+	{
+	margin-top:40px;
+	text-shadow:0px 0px 15px rgba(0, 0, 0, 0.7);
+	}
 }
 
 /* --------------- MASTER END --------------- */
@@ -368,11 +404,18 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 text-align:center;
-padding:20px;
-text-shadow:0px 0px 20px rgba(0, 0, 0, 1);
+text-shadow:0px 0px 20px rgba(0, 0, 0, 0.6);
 height:100%;
 width:100%;
 z-index:2;
+}
+
+#herotitlecontent
+{
+display:flex;
+flex-direction:row;
+justify-content:center;
+padding:20px;
 }
 
 #herotitle h1
@@ -382,26 +425,51 @@ letter-spacing:5px;
 font-size:60px;
 font-weight:600;
 color:white;
+width:100%;	
 }
 
-@media only screen and (min-width: 800px)
+@media only screen and (min-width: 600px)
 {
-	#herotitle
-	{
-	text-align:center;
-	text-shadow:0px 0px 60px rgba(0, 0, 0, 1);
-	height:100%;
-	width:100%;
-	z-index:2;
+
+	#herotitle h1
+	{	
+	font-size:75px;
 	}
+}
+
+@media only screen and (min-width: 950px)
+{
+
+	#herotitle h1
+	{	
+	width:100%;
+	}
+}
+
+@media only screen and (min-width: 1000px)
+{
+	#herotitle h1
+	{	
+	font-size:75px;
+	}
+}
+
+@media only screen and (min-width: 1300px)
+{
+	#herotitle h1
+	{
+	font-size:80px;
+	}
+}
+
+
+@media only screen and (min-width: 1500px)
+{
 
 	#herotitle h1
 	{
-	font-family: 'Caveat Brush', cursive;
-	letter-spacing:5px;
-	font-size:75px;
-	font-weight:600;
-	color:white;
+	width:100%;	
+	font-size:85px;
 	}
 }
 
@@ -494,7 +562,7 @@ margin-top:10px;
 
 .yellowband
 {
-background-color:rgba(255, 190, 0);
+background-color:rgba(255, 210, 0);
 height:60px;
 }
 
@@ -508,11 +576,19 @@ background-color:white;
 
 #ad_title
 {
-display:flex;
-flex-direction:row;
-justify-content:center;
-margin-top:-300px;
-text-shadow:0px 0px 30px #000;
+display:none;
+}
+
+@media only screen and (min-width: 800px)
+{
+	#ad_title
+	{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	margin-top:-300px;
+	text-shadow:0px 0px 20px rgba(0, 0, 0, 0.5);
+	}
 }
 
 /* ((( SLIDE SHOW START ))) */
@@ -560,7 +636,7 @@ margin-left:auto;
 {
 width:60vw;
 height:600px;
-background-image:url(../images/Gallery_01_All.png);
+background-image:url(../images/Gallery_01_AllMOB.png);
 background-repeat:no-repeat;
 background-position:center;
 background-size:cover;
@@ -570,7 +646,7 @@ background-size:cover;
 {
 width:60vw;
 height:600px;
-background-image:url(../images/Gallery_02_HawaiianWhite.png);
+background-image:url(../images/Gallery_02_HawaiianWhiteMOB.png);
 background-repeat:no-repeat;
 background-position:center;
 background-size:cover;
@@ -580,7 +656,7 @@ background-size:cover;
 {
 width:60vw;
 height:600px;
-background-image:url(../images/Gallery_03_LemonShandy.png);
+background-image:url(../images/Gallery_03_LemonShandyMOB.png);
 background-repeat:no-repeat;
 background-position:center;
 background-size:cover;
@@ -590,7 +666,7 @@ background-size:cover;
 {
 width:60vw;
 height:600px;
-background-image:url(../images/Gallery_04_RubyFresh.png);
+background-image:url(../images/Gallery_04_RubyFreshMOB.png);
 background-repeat:no-repeat;
 background-position:center;
 background-size:cover;
@@ -600,10 +676,38 @@ background-size:cover;
 {
 width:60vw;
 height:600px;
-background-image:url(../images/Gallery_05_HolyCitrus.png);
+background-image:url(../images/Gallery_05_HolyCitrusMOB.png);
 background-repeat:no-repeat;
 background-position:center;
 background-size:cover;
+}
+
+@media only screen and (min-width: 800px)
+{
+	#gallery_slide_01
+	{
+	background-image:url(../images/Gallery_01_All.png);
+	}
+
+	#gallery_slide_02
+	{
+	background-image:url(../images/Gallery_02_HawaiianWhite.png);
+	}
+
+	#gallery_slide_03
+	{
+	background-image:url(../images/Gallery_03_LemonShandy.png);
+	}
+
+	#gallery_slide_04
+	{
+	background-image:url(../images/Gallery_04_RubyFresh.png);
+	}
+
+	#gallery_slide_05
+	{
+	background-image:url(../images/Gallery_05_HolyCitrus.png);
+	}
 }
 
 .cursor_container
@@ -733,13 +837,6 @@ letter-spacing:2px;
 
 @media only screen and (min-width: 800px)
 {
-	.ad_values_flexdisplay
-	{
-	display:flex;
-	flex-direction:row;
-	justify-content:space-between;
-	margin:0 auto 30px auto;
-	}
 
 	.ad_values_flexdisplay h2
 	{
@@ -752,6 +849,17 @@ letter-spacing:2px;
 	}
 }
 
+@media only screen and (min-width: 1200px)
+{
+	.ad_values_flexdisplay
+	{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	margin:0 auto 30px auto;
+	}
+}
+
 .ad_values_flexbox
 {
 display:flex;
@@ -759,11 +867,20 @@ flex-direction:column;
 width:150px;
 }
 
+.ad_values_flexslide
+{
+display:flex;
+direction:row;
+justify-content:center;
+
+}
+
 .ad_values_flexalign
 {
 display:flex;
 flex-direction:row;
 justify-content:center;
+margin:20px;
 }
 
 .ad_values_svg
@@ -806,8 +923,6 @@ color:white;
 #ad_intro p
 {
 color:white;
-text-align: center;
-text-align:justify;
 }
 
 #ad_intro_article
@@ -823,6 +938,7 @@ border-radius: 5px;
 width:120px;
 margin-left: auto;
 padding:5px;
+transition:.2s;
 }
 
 #ad_intro_button p
@@ -854,6 +970,8 @@ color:rgba(255,130,0);
 
 .beers_flex_display
 {
+display:flex;
+flex-direction:column;
 margin-left:auto;
 margin-right:auto;
 margin-top:0px;
@@ -861,36 +979,204 @@ margin-bottom:90px;
 width: 70%;
 }
 
+.beer_name_container
+{
+display:flex;
+flex-direction:column;
+justify-content:left;
+width:100%;
+max-height:200px;
+}
+
+.beer_name
+{
+height:50px;
+margin-right:auto;
+margin-bottom:20px;
+}
+
+.beers_title
+{
+max-width:400px;
+margin: 0 auto;
+}
+
 .beers_flex_display h2
 {
 font-size:40px;
-font-family: 'Caveat Brush', cursive;
+font-family: 'DirtyHeadline', sans-serif;
 text-align:left;
 color:rgba(255, 80, 0);
-margin-bottom:20px;
+margin-bottom:30px;
 }
 
 .beers_flex_display hr
 {
-margin-bottom:50px;
+border:0;
+clear:both;
+display:block;
+width: 100%;               
+background-color:rgba(150,150,150,0.5);
+height: 1px;
+margin-top:10px;
+margin-bottom:110px;
 }
 
 .beer_article
 {
 display:flex;
+flex-direction:column;
 margin-bottom:50px;
 }
 
 .beer_text
 {
-
+display:flex;
+flex-direction:column;
+flex-grow:3;
+order:2;
+margin:15px;
+min-width:310px;
 }
 
-.beer_image
+.beer_image01
 {
-min-height:400px;
-min-width:500px;
-background-color:grey;
+display:flex;
+flex-direction:row;
+justify-content:center;
+flex-grow:1;
+order:1;
+height:250px;
+width:auto;
+background-image:url(../images/beercase01.png);
+background-repeat:no-repeat;
+background-position:center;
+background-size:contain;
+}
+
+.beer_image02
+{
+display:flex;
+flex-direction:row;
+justify-content:center;
+flex-grow:1;
+order:1;
+height:250px;
+width:auto;
+background-image:url(../images/beercase02.png);
+background-repeat:no-repeat;
+background-position:center;
+background-size:contain;
+}
+
+.beer_image03
+{
+display:flex;
+flex-direction:row;
+justify-content:center;
+flex-grow:1;
+order:1;
+height:250px;
+width:auto;
+background-image:url(../images/beercase03.png);
+background-repeat:no-repeat;
+background-position:center;
+background-size:contain;
+}
+
+.beer_image04
+{
+display:flex;
+flex-direction:row;
+justify-content:center;
+flex-grow:1;
+order:1;
+height:250px;
+width:auto;
+background-image:url(../images/beercase04.png);
+background-repeat:no-repeat;
+background-position:center;
+background-size:contain;
+}
+
+@media only screen and (min-width: 800px)
+{
+	.beers_flex_display
+	{
+	display:flex;
+	flex-direction:column;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	margin-bottom:90px;
+	width: 70%;
+	}
+
+	.beers_flex_display hr
+	{
+	margin-bottom:50px;
+	}
+
+	.beers_flex_display h2
+	{
+	margin-bottom:10px;
+	}
+
+	.beers_title
+	{
+	max-width:500px;
+	margin:0 auto;
+	}
+
+	.beer_article
+	{
+	display:flex;
+	flex-direction:row;
+	margin-bottom:50px;
+	}
+
+	.beer_text
+	{
+	order:1;
+	margin: 15px 0px 0px 0px;
+	}
+
+	.beer_image01
+	{
+	order:2;
+	min-width:400px;
+	min-height:300px;
+	}
+
+	.beer_image02
+	{
+	order:2;
+	min-width:400px;
+	min-height:300px;
+	}
+
+	.beer_image03
+	{
+	order:2;
+	min-width:400px;
+	min-height:300px;
+	}
+
+	.beer_image04
+	{
+	order:2;
+	min-width:400px;
+	min-height:300px;
+	}
+}
+
+@media only screen and (min-width: 1100px)
+{
+	.beers_title
+	{
+	max-width:1000px;
+	margin:0 auto;
+	}
 }
 
 /* --------------- BEER END --------------- */
@@ -912,6 +1198,88 @@ margin-right:auto;
 #about_section article
 {
 margin-bottom:90px;
+}
+
+.article_image_container
+{
+display:flex;
+flex-direction:row;
+justify-content:center;
+overflow:hidden;
+}
+
+.article_image_x_align
+{
+display:flex;
+flex-direction:column;
+}
+
+.about_img_01
+{
+height:245px;
+width:370px;
+background-image:url(../images/Hawaii_02.jpg);
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+margin:30px auto 3px auto;
+}
+
+.legend
+{
+display:flex;
+flex-direction:row:
+justify-content:center;
+height:16px;
+width:370px;
+background-color:rgba(255, 255, 255, 0.4);
+margin-bottom:25px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.legendtext
+{
+width:100%;
+}
+
+.legendtext p
+{
+font-family: sans-serif;
+font-weight:bold;
+font-size:10px;
+text-align:center;
+color:black;
+margin-top:-4px;
+}
+
+@media only screen and (min-width: 800px)
+{
+	.about_img_01
+	{
+	height:532px;
+	width:800px;
+	margin:30px auto 30px auto;
+	}
+
+	.legend
+	{
+	height:20px;
+	width:790px;
+	padding:5px;
+	margin-top:-60px;
+	margin-bottom:30px;
+	}
+
+	.legendtext
+	{
+	width:100%;
+	}
+
+	.legendtext p
+	{
+	font-size:12px;
+	}
 }
 
 /* --------------- ABOUT END --------------- */
@@ -938,9 +1306,17 @@ margin-right:auto;
 margin-bottom:50px;
 margin-top:30px;
 padding:15px;
-width:70%;
+width:90%;
 background-color:rgba(255, 80, 0);
 border-radius:15px;
+}
+
+@media only screen and (min-width: 800px)
+{
+#form_flex_display
+	{
+	width:70%;
+	}
 }
 
 #form_flex_display input, select, option
@@ -961,14 +1337,21 @@ padding:5px;
 resize:vertical;
 }
 
-#form_flex_display label
+.contact_form_label
 {
-font-size:30px;
+display:flex;
+flex-direction:column;
+padding:7px;
+border-radius:7px;
+background-color:#FFCC00;
+}
+
+.contact_form_label label
+{
+font-size:25px;
 font-family: 'Caveat Brush', cursive;
 text-align:left;
 color:white;
-margin-bottom:5px;
-margin-top:5px;
 }
 
 #button_area
@@ -1003,6 +1386,30 @@ background-color:white;
 /*-------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------*/
 
+/* FOR BOTH FORM SECTIONS */
+
+.form_item
+{
+display:flex;
+flex-direction:column;
+margin-bottom:10px;
+}
+
+.form_label_container
+{
+display:flex;
+flex-direction:row;
+margin-bottom:-3px;
+margin-left:-5px;
+z-index:2;
+}
+
+/* FOR BOTH FORM SECTIONS */
+
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
 /* --------------- ORDER START --------------- */
 
 #order_flex_display
@@ -1019,11 +1426,19 @@ flex-direction:column;
 margin-left:auto;
 margin-right:auto;
 margin-bottom:50px;
-margin-top:30px;
+margin-top:60px;
 padding:15px;
-width:70%;
+width:90%;
 background-color:rgba(255, 170, 0);
 border-radius:15px;
+}
+
+@media only screen and (min-width: 800px)
+{
+#order_form_flex_display
+	{
+	width:70%;
+	}
 }
 
 #order_form_flex_display input, select, option
@@ -1044,14 +1459,21 @@ padding:5px;
 resize:vertical;
 }
 
-#order_form_flex_display label
+.order_form_label
 {
-font-size:30px;
+display:flex;
+flex-direction:column;
+padding:7px;
+border-radius:7px;
+background-color:#FF6F00;
+}
+
+.order_form_label label
+{
+font-size:25px;
 font-family: 'Caveat Brush', cursive;
 text-align:left;
 color:white;
-margin-bottom:5px;
-margin-top:5px;
 }
 
 #order_button_area
