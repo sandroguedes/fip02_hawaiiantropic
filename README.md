@@ -1,13 +1,43 @@
-# IDP LV 2 FINAL INTEGRATED PROJECT
+# HAWAIIAN TROPIC
 
 ## Description
-My Awesome Final Integrated Project for the second term of the Interactive Media Design course at Fanshawe College.
+Together, we seek the beauty and joy in all things: Our body, ourselves, our community. To that end, we put together a selection of flavours that are each inspired by one of these core concepts so that our customers become inspired to try living life the Hawaiian Way.
+
+All that said, grab a drink and join us!
+
 
 ## Installation
 There is no installation process for this repo. Simply pull down and start working!
 
-## MIT License
-MIT License
+
+## Author
+
+### Sandro Guedes
+* Design
+* Development
+
+
+## Developed With
+
+* HTML
+* CSS3
+* JS
+
+
+## Designed With
+
+* Adobe Illustrator
+* Adobe Indesign
+* Adobe Photoshop
+* Adobe After Effects
+* Adobe Premiere Pro
+* Adobe XD
+* Maxon Cinema 4D
+
+
+## License
+
+### MIT License
 
 Copyright (c) [2020] [Sandro Guedes]
 
