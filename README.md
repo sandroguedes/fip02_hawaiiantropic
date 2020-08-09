@@ -1,5 +1,7 @@
 # HAWAIIAN TROPIC
 
+![Image](https://raw.githubusercontent.com/sandroguedes/s_guedesdesouza_FIP/master/images/Gallery_01_All.png)
+
 ## Description
 Together, we seek the beauty and joy in all things: Our body, ourselves, our community. To that end, we put together a selection of flavours that are each inspired by one of these core concepts so that our customers become inspired to try living life the Hawaiian Way.
 
